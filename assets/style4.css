@@ -106,11 +106,6 @@ Style Attribute {
     max-width: 1119px !important;
     padding-left: 0 !important;
 }
-
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
-    display: none;
-}
 /* End of Adeel CSS */
 
 /* ---------------------------------------------------
