@@ -40,7 +40,7 @@
     color: #aaa;
 }
 .main {
-    width: 50%;
+    width: 70%;
     
 }
     </style>
@@ -50,10 +50,10 @@
 <body>
 
     <div class="wrapper">
-        <!-- Sidebar  -->
+       <!-- Sidebar  -->
         <nav id="sidebar">
-            <div class="sidebar-header" >
-               <img src="assets/logo.png">
+            <div class="sidebar-header" class="active">
+               <img src="assets/logo.png" id="mainlogo">
               
             </div>
 
@@ -71,7 +71,7 @@
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px"> QM</h6>
                     </a>
                 </li>
-                <li >
+                <li class="active">
                     <a href="#pageSubmenu" >
                         <img src="assets/PendingLogo.png" height="15px">
                          <h6 style="display: inline;margin-left: 10px;font-size: 12px">    PENDING BATCHES</h5>
@@ -93,14 +93,14 @@
                        
                     </a>
                 </li>
-                <li >
+                <li>
                     <a href="#">
                         <img src="assets/batchconlogo.png"height="15px">
                          <h6 style="display: inline;margin-left: 10px;font-size: 12px">   BATCH CONFIGURATION</h5>
                       
                     </a>
                 </li>
-                 <li class="active">
+                 <li>
                     <a href="#">
                        <img src="assets/globalconlogo.png"height="15px">
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px">      GLOBAL CONFIGURATION</h5>
@@ -113,27 +113,36 @@
             
         </nav>
 
-        <!-- Page Content  -->
-        <div id="content" style="margin-left:100px;">
 
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
+         <div style="margin: 10px;"> <button type="button" id="sidebarCollapse" class="btn btn-info" style="background-color: #4579BD;">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+</div>
+
+        <!-- Page Content  -->
+        <div id="content" style="margin-left:10px;">
+
+            <div class="row">
+                    <div class="col-md-12">
 
                 
                     <div class="main">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-collapse" id="navbarSupportedContent">
                        <!-- Actual search box -->
   <div class="form-group has-search" style="margin-left:70px;">
     <span class="fa fa-search form-control-feedback" style="padding:10px;
     
     /*border-radius:Top-left, Top-right, Bottom-right, Bottom-left;*/
 }"></span>
-    <input type="text" class="form-control" placeholder="Search" style="border-radius: 30px 30px 30px 30px;width: 500px; ">
+    <input type="text" class="form-control" placeholder="Search" style="border-radius: 30px 30px 30px 30px;width: 100%; ">
   </div>
                     </div>
                 </div>
             </div>
-            </nav>
+           
+             </div>
+        <div class="col-md-12" >
                 <div id="content-main" style="margin-left:30px;">
 
              <h6 style="color: #D7D7D7;display: inline">Enter QM NGDID:</h6>
@@ -142,7 +151,7 @@
             <button class="btn text-white " style="background-color: #4579BD;margin-left: 50px ">ACTIVATE QM</button>
             <button class="btn text-white " style="background-color: #4579BD;margin-left: 10px ">DEACTIVATE QM</button>
             <h1></h1>
-            <div  style="width: 100%">
+           <div  class="col-md-12" style="margin-top: 20px">
             <table id="example" class="mdl-data-table compact stripe pretty" style="width:400px;padding: 20px; "> 
     <thead>
    
