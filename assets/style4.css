@@ -51,6 +51,63 @@ span {
     display: inline-block;
 }
 
+/* Start of Adeel CSS */
+/* start */
+.mdc-data-table {
+    background-color: #fff;
+    background-color: var(--mdc-theme-surface, #fff);
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.12);
+    -webkit-overflow-scrolling: touch;
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.mdc-layout-grid {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    padding: var(--mdc-layout-grid-margin-desktop, 24px);
+}
+
+.form-inline label {
+    display: -ms-flexbox;
+    display: inherit;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 10px;
+    white-space: nowrap;
+    display: none;
+}
+
+.mdc-button--raised:not(:disabled), .mdc-button--unelevated:not(:disabled) {
+    background-color: #4579bd !important;
+}
+
+Style Attribute {
+    color: #4579bd;
+    text-align: center;
+    width: 233.2px;
+}
+.container {
+    max-width: 1119px !important;
+    padding-left: 0 !important;
+}
+/* End of Adeel CSS */
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -63,7 +120,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: #4579bd;
     color: #fff;
     transition: all 0.3s;
 }
@@ -74,12 +131,12 @@ span {
 
 #sidebar .sidebar-header {
     padding: 10px;
-    background: #6d7fcc;
+    background: #4579bd;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #4579bd;
 }
 
 #sidebar ul p {
@@ -94,7 +151,7 @@ span {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #4579bd;
     background: #fff;
 }
 
@@ -119,7 +176,7 @@ a[aria-expanded="true"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #4579bd;
 }
 
 ul.CTAs {
@@ -136,12 +193,12 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #4579bd;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #4579bd !important;
     color: #fff !important;
 }
 
