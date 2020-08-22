@@ -72,7 +72,7 @@ span {
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
-    padding: 24px;
+    padding: 12px;
     padding: var(--mdc-layout-grid-margin-desktop, 24px);
 }
 
