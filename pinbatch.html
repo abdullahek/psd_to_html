@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>HighPoint | PendingBatches</title>
+    <title>HighPoint | PinBatch</title>
+
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -86,6 +87,7 @@ div.dataTables_wrapper div.dataTables_info {
 <body>
     <div class="wrapper">
         <!-- Sidebar  -->
+        <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header" class="active">
                <img class="img-fluid" src="assets/logo.png" id="mainlogo">
@@ -93,110 +95,67 @@ div.dataTables_wrapper div.dataTables_info {
 
             <ul class="list-unstyled components" style="padding: 10px;font-size: 10px;margin-top: 2.4em;">
                 <li >
-                    <a href="#homeSubmenu"  >
+                    <a href="managecsr.html"  >
                         <img src="assets/QMlogo.png" height="20px" width="20px"> 
                        <h6 style="display: inline;margin-left: 10px;font-size: 12px"> CSR</h5>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="qm.html">
                         <img src="assets/QMlogo.png" height="15px">
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px"> QM</h6>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="#pageSubmenu" >
+                <li >
+                    <a href="pendingbatch.html" >
                         <img src="assets/PendingLogo.png" height="15px">
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px">    PENDING BATCHES</h5>
                     </a>
                   
                 </li>
-                <li>
-                    <a href="#">
+                <li >
+                    <a href="batch_reports.html">
                         <img src="assets/Batchlogo.png" height="15px">
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px"> BATCH REPORTS</h5>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="active">
+                    <a href="pinbatch.html">
                         <img src="assets/Pinbatchlogo.png" height="15px">
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px"> PIN BATCH</h5>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="batchconfiguration.html">
                         <img src="assets/batchconlogo.png"height="15px">
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px"> BATCH CONFIGURATION</h5>
                     </a>
                 </li>
                  <li>
-                    <a href="#">
+                    <a href="globalconfiguration.html">
                        <img src="assets/globalconlogo.png"height="15px">
                         <h6 style="display: inline;margin-left: 10px;font-size: 12px"> GLOBAL CONFIGURATION</h5>
                     </a>
                 </li>
             </ul>
         </nav>
-
        
         <div id="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12" style="margin-top: 2%;margin-left: 5%;">
-                        <div class="main">
-                            <div class="navbar-collapse" id="navbarSupportedContent">
-                                <!-- Actual search box -->
-                                <div class="form-group has-search">
-                                    <span class="fa fa-search form-control-feedback" style="padding:10px;"></span>
-                                    <input type="text" class="form-control" placeholder="Search" style="border-radius: 30px 30px 30px 30px;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12" style="margin-top:2%">
-                        <div id="content-main">
-                            <button class="btn text-white" style="background-color: #4579BD; ">RUN REPORT</button>
-                        </div>
-                    </div>
+                    <div class="col-md-12" style="margin-top: 12%;margin-left: 25%;">
+                      
+                    <div class="card" style="width: 24rem;">
+  <div class="card-body">
+    <h5 class="card-title">Pin Batch</h5>
+    <h6 style="color: #4579BD;">NGDID:</h6>
 
-                    <div class="col-md-12" style="margin-top: 1%">
-                            <table id="example" class="table" style="text-align: center;"> 
-                                <thead>
-                                    <tr>
-                                        <th style="color: #4980C7;text-align: center;"><b>BATCH ID</b></th> 
-                                        <th style="color: #4980C7;text-align: center;"><b>QM NAME</b></th> 
-                                        <th style="color: #4980C7;text-align: center;"><b>CSR NAME</b></th> 
-                                        <th style="color: #4980C7;text-align: center;"><b>QUEUED CALL COUNT</b></th> 
-                                    </tr> 
-                                </thead> 
-                                <tbody> 
-                                    <tr > 
-                                        <td>Tiger Nixon</td> 
-                                        <td>System Architect</td> 
-                                        <td>Edinburgh</td> 
-                                        <td class="text-center">61</td> 
-                                    </tr> 
-                                    <tr> 
-                                        <td>Tiger Nixon</td> 
-                                        <td>System Architect</td> 
-                                        <td>Edinburgh</td> 
-                                        <td class="text-center"> 61</td> 
-                                    </tr> 
-                                    <tr> 
-                                        <td>Tiger Nixon New here</td> 
-                                        <td>System Architect System Architect</td> 
-                                        <td>Edinburgh</td> 
-                                        <td class="text-center">61</td>    
-                                    </tr> 
-                                    <tr>
-                                        <td>Tiger Nixon</td> 
-                                        <td>System Architect</td> 
-                                        <td>Edinburgh</td> 
-                                        <td class="text-center">61</td> 
-                                    </tr> 
-                                </tbody>
-                            </table>
-                        </div>
+      <input type="text" class="form-control" placeholder="Search" style="border-radius: 10px 10px 10px 10px;">
+      <button class="btn text-white" style="background-color: #4579BD;margin-top: 30px; ">UPDATE BATCH</button>
+    </div>
+</div>
+                   
+                  
                     </div>
                 </div>
             </div>
